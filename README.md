@@ -20,7 +20,9 @@ The most complicated thing in this image is the *A* pane; to build it, we have t
 - the calculation of the relative position of P-peak and trigger pulse inside corresponding R-R interval.
 Once you do that, you can set the relative position of P-peak and the start/end position of the trigger pulse to Y-coordinate and the number of R-R interval to the X-coordinate, then you will get a plot like shown at **Fig. 1A**.
 
-The mostly commented code part demonstrating how to do that is located in the file ecg-commented-sample.ipynb; this file you are invited to use as a tutorial. It shows all phases of the protocol including baseline correction, ECG segmentation, P-peak annotation, phase-plot drawing. The phase analysis is done in-place by our scripts. Segmentation and peak annotation are done using [NeuroKit2](https://github.com/neuropsychology/NeuroKit). Also we demonstrate here the application of PCA-based noise filtration.
+The mostly commented code part demonstrating how to do that is located in the file `ecg-commented-sample.ipynb`; this file you are invited to use as a tutorial. It shows all phases of the protocol including baseline correction, ECG segmentation, P-peak annotation, phase-plot drawing. The phase analysis is done in-place by our scripts. Segmentation and peak annotation are done using [NeuroKit2](https://github.com/neuropsychology/NeuroKit). Also we demonstrate here the application of PCA-based noise filtration.
+
+`average-complex-shape.ipynb` demonstrates how to average complex shape during pacing and outside pacing period.
 
 `ecg-other-samples.ipynb` demonstrates the application of the protocol to another 3 samples (without intensive comments).
 
